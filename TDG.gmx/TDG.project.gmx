@@ -5,9 +5,36 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
-  <paths name="paths"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_nfantry</sprite>
+    <sprite>sprites\spr_shot</sprite>
+    <sprite>sprites\spr_off</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\chip000</background>
+    <background>background\201303250202169ec</background>
+  </backgrounds>
+  <paths name="paths">
+    <path>paths\path_enemy</path>
+  </paths>
+  <scripts name="scripts">
+    <script>scripts\gameMgr_stepMain.gml</script>
+    <script>scripts\gameMgr_updateCuror.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\obj_enemy</object>
+    <object>objects\obj_infantry</object>
+    <object>objects\obj_shot</object>
+    <object>objects\obj_gameMgr</object>
+    <object>objects\obj_off</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_main</room>
+  </rooms>
+  <constants number="1">
+    <constant name="GRID_SIZE">32</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
